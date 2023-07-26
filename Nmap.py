@@ -62,8 +62,21 @@
 
 # Evading Firewall
 
-#   ● > nmap -f 192.168.1.1 (Fragment probes into 8-bytes packles)
+#   ● > nmap -f 192.168.1.1 (Fragment probes into 8-bytes packets)
 
 #   ● > nmap -D RND:10 192.168.1.1 (10 Random Decoy)
 
 
+
+# Output Options
+
+
+#   ● > nmap -oX scan.xml 192.168.1.1 (XML File)
+
+
+
+# Nmap Scripting Engine (NSE)
+
+#   ● > nmap --script [script.nse] Target_IP
+
+#   ● > nmap --script default Target_IP
